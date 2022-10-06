@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 375px) {
+    .nav {
+        position: relative;
+        box-sizing: border-box;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav__block {
+        height: 104px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 16px 21px 13px 21px;
+    }
+
+    .nav__logo {
+        margin-bottom: 15px;
+    }
+
+    .nav__nameLogoImg {
+        padding-bottom: 4px;
+        width: 94.72px;
+        height: 18.35px;
+    }
+
+    .nav__logoImg {
+        padding-right: 10px;
+        width: 29.84px;
+        height: 29.84px;
+    }
+
+    .nav__login img {
+        width: 24px;
+        height: 24px;
+        padding-bottom: 8px;
+
+    }
+
+    .nav__ellipseImg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .nav__search {
+        box-sizing: border-box;
+        order: 1;
+        margin-top: 12px;
+        width: 100%;
+
+    }
+
+    .nav__input {
+        height: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        border: none;
+        color: #BBC4D6;
+    }
+
+    .nav__loginBlock {
+        display: none;
+    }
+
+    .nav__line {
+        position: absolute;
+        display: inline;
+        top: 62px;
+        width: 100%;
+        height: 1px;
+        background-color: #EBEBF1;
+        border: none;
+    }
+
+    .title {
+        margin: 70px 20px 30px 20px;
+    }
+
+    .title h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 160%;
+        text-transform: uppercase;
+        color: #121920;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0px 20px 73px 20px;
+        box-sizing: border-box;
+    }
+
+    .main__partners {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 335px;
+        height: 140px;
+        border: 1px solid #EBEBF1;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        /*margin: 0px 5px 20px 5px;*/
+    }
+
+    .main__partners:hover {
+        box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+        cursor: pointer;
+    }
+
+    .main__partners img {
+        width: 40%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+}
+
+@media (min-width: 768px ) {
+    .nav__line {
+        width: 1px;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 168px;
+        height: 80px;
+        margin: 0;
+    }
+
+    .nav__search {
+        order: 0
+    }
+
+    .nav__loginBlock {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+
+    }
+    .nav__loginBlock img{
+        width: 40px;
+        height: 40px;
+    }
+    .nav__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: right;
+        letter-spacing: 0.01em;
+        color: #768298;
+        padding-right: 10px;
+        padding-left: 19px;
+    }
+
+    .nav__search {
+        height: 40px;
+        margin-top: 0;
+        width: 344px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        border: 1px solid #EBEBF1;
+        border-radius: 5px;
+        padding: 6px 0px 6px 14px;
+    }
+
+    .nav__block {
+        height: 80px;
+        padding: 20px 21px;
+        box-sizing: border-box;
+    }
+
+    .nav__login {
+        display: none;
+    }
+
+    .nav__logo {
+        margin-bottom: 0px;
+    }
+
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 399px;
+    }
+
+    .main__partners {
+        width: 229px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 1440px ) {
+    .nav__block {
+        padding: 20px 100px;
+    }
+
+    .nav__search {
+        width: 835px;
+    }
+
+    .nav__line {
+        right: 248px;
+    }
+
+    .main__partners {
+        width: 287px;
+        height: 120px;
+        margin-right: 20px;
+    }
+
+    .title {
+        margin: 70px 100px 30px;
+    }
+
+    .main {
+        margin: 0px 100px 392px 100px;
+        justify-content: normal;
+    }
+
+}
